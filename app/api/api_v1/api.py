@@ -9,4 +9,3 @@ api_router.include_router(users.router, prefix="/users", tags=["users"])
 api_router.include_router(posts.router, prefix="/posts", tags=["posts"])
 api_router.include_router(votes.router, prefix="/votes", tags=["votes"])
 api_router.include_router(auth.router, tags=["auth"])
-
