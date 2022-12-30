@@ -1,8 +1,4 @@
-from datetime import datetime
-from typing import List
-
 import strawberry
-from strawberry.fastapi import GraphQLRouter
 
 from app.db.database import get_db
 from app.models import User

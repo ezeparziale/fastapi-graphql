@@ -1,8 +1,6 @@
-from datetime import datetime
 from typing import List
 
 import strawberry
-from strawberry.fastapi import GraphQLRouter
 
 from app.api.graphql.deps import IsAuthenticated
 from app.db.database import get_db
