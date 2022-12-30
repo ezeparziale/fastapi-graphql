@@ -1,6 +1,6 @@
 # :strawberry: Fastapi with graphql
 
-Fastapi api with GraphQL
+Fastapi api with GraphQL using Strawberry
 
 ## :floppy_disk: Installation
 
