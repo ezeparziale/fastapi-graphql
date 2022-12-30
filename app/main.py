@@ -4,6 +4,8 @@ from starlette.middleware.cors import CORSMiddleware
 from starlette.middleware.sessions import SessionMiddleware
 
 from app.api.api_v1.api import api_router
+from app.api.graphql.api import api_router_graphql
+from app.core.config import settings
 
 # FastAPI
 app = FastAPI(
@@ -24,6 +26,8 @@ if settings.BACKEND_CORS_ORIGINS:
 
 # Routes
 app.include_router(api_router, prefix=settings.API_V1_STR)
+app.include_router(api_router_graphql)
+
 
 @app.get("/", include_in_schema=False)
 async def docs_redirect():
