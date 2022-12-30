@@ -1,4 +1,4 @@
-# :zap: Fastapi with graphql
+# :strawberry: Fastapi with graphql
 
 Fastapi api with GraphQL
 
