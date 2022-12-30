@@ -55,3 +55,24 @@ def get_user(
             detail=f"User with: {id} does not exists",
         )
     return user
+
+
+@router.get("/", response_model=list[UserOut])
+def get_users(
+    db: Session = Depends(get_db),
+    current_user: User = Depends(get_current_user),
+    limit: int = 10,
+    skip: int = 0,
+    search: str | None = "",
+) -> Any:
+    """
+    ### Get user list
+    """
+    posts = (
+        db.query(User)
+        .filter(User.email.contains(search))
+        .limit(limit)
+        .offset(skip)
+        .all()
+    )
+    return posts
