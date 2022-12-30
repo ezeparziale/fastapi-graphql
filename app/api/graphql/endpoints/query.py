@@ -19,7 +19,9 @@ class Query:
         db = next(get_db())
         return db.query(User).filter(User.id == id).first()
 
-    @strawberry.field
+    @strawberry.field(
+        description="Get all users info", permission_classes=[IsAuthenticated]
+    )
     def GetUsers(self) -> List[UserQ]:
         db = next(get_db())
         return db.query(User).all()
