@@ -2,7 +2,7 @@ fastapi[all]==0.95.2
 SQLAlchemy==2.0.15
 psycopg2==2.9.6
 alembic==1.11.1
-strawberry-graphql[fastapi]==0.151.2
+strawberry-graphql[fastapi]==0.177.3
 python-jose==3.3.0
 passlib[bcrypt]==1.7.4
 pytest==7.3.1
