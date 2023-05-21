@@ -1,5 +1,5 @@
 fastapi[all]==0.95.2
-SQLAlchemy==1.4.45
+SQLAlchemy==2.0.15
 psycopg2==2.9.6
 alembic==1.11.1
 strawberry-graphql[fastapi]==0.151.2
