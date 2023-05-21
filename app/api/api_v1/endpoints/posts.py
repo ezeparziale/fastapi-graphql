@@ -81,7 +81,7 @@ def delete_post(
     id: int,
     db: Session = Depends(get_db),
     current_user: User = Depends(get_current_user),
-) -> Any:
+) -> None:
     """
     ### Delete post
     """
