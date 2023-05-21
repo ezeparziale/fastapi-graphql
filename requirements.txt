@@ -1,4 +1,4 @@
-fastapi[all]==0.88.0
+fastapi[all]==0.95.2
 SQLAlchemy==1.4.45
 psycopg2==2.9.5
 alembic==1.9.1
